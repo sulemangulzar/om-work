@@ -6,19 +6,25 @@
     <title>Web page</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-200 p-10">
+  <body class="bg-gray-200 m-4">
     <div>
       <!-- Grunddaten -->
-      <div class="2xl:w-[920px] w-[350px] h-[736px] bg-white rounded-2xl">
+      <div
+        class="2xl:w-[920px] w-full 2xl:h-[736px] h-auto bg-white rounded-2xl"
+      >
         <h3
           class="text-xl font-bold text-gray-900 leading-8 tracking-[-0.4px] py-[20px] px-[36px] non-italic"
         >
           Grunddaten
         </h3>
-        <hr class="w-[920px] h-px bg-gray-100" />
-        <div class="flex flex-col gap-[7px] ml-[36px] mr-[42px] pt-[21px]">
+        <hr class="2xl:w-[920px] w-full h-px bg-gray-100" />
+        <div
+          class="flex flex-col gap-[7px] 2xl:ml-[36px] 2xl:mr-[42px] pt-[21px] mx-4"
+        >
           <!-- 1 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -32,7 +38,9 @@
             />
           </div>
           <!-- 2 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -46,7 +54,9 @@
             />
           </div>
           <!-- 3 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -60,7 +70,9 @@
             />
           </div>
           <!-- 4 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -75,7 +87,9 @@
           </div>
 
           <!-- 5 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -89,7 +103,9 @@
             />
           </div>
           <!-- 6 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -104,7 +120,9 @@
           </div>
 
           <!-- 7 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -119,7 +137,9 @@
           </div>
 
           <!-- 8 -->
-          <div class="flex items-center">
+          <div
+            class="flex flex-col md:flex-row md:items-center items-start gap-2"
+          >
             <label
               class="w-[160px] text-sm text-gray-900 font-medium"
               for="form"
@@ -138,15 +158,15 @@
         >
           Beschreibung
         </h3>
-        <hr class="w-[920px] h-px bg-gray-100" />
+        <hr class="2xl:w-[920px] w-full h-px bg-gray-100" />
         <textarea
           name="message"
           placeholder="Schreibe etwas .."
-          class="w-[842px] h-[154px] border border-[color:var(--Secondary-Grey-500,#E0E5F2)] rounded-[5px] border-solid ml-[36px] mt-[29px] mb-[36px] text-[#73767D] text-sm not-italic font-normal leading-1 tracking-[-0.28px] py-[12px] px-[15px]"
+          class="2xl:w-[842px] h-[154px] w-[96%] mx-2 md:mx-4 border border-[color:var(--Secondary-Grey-500,#E0E5F2)] rounded-[5px] border-solid 2xl:ml-[36px] mt-[29px] mb-[36px] text-[#73767D] text-sm not-italic font-normal leading-1 tracking-[-0.28px] py-[12px] px-[15px]"
         ></textarea>
       </div>
       <!-- Profilbild -->
-      <div class="w-[445px] h-[284px] bg-white rounded-[20px] mt-12">
+      <div class="md:w-[445px] w-full h-[284px] bg-white rounded-[20px] mt-12">
         <h3
           class="text-xl not-italic font-bold leading-8 tracking-[-0.4px] px-[26px] py-[18px]"
         >
@@ -154,7 +174,7 @@
         </h3>
         <hr class="w-full h-px bg-gray-100" />
         <div
-          class="w-[166px] h-[156px] border-[#CACODF] border-dashed border-2 my-[21px] mx-[26px] rounded-xl flex flex-col items-center gap-[2px]"
+          class="w-[166px] h-[156px] border-[#CACODF] border-dashed border-2 my-[21px] md:mx-[26px] mx-auto rounded-xl flex flex-col items-center gap-[2px]"
         >
           <img
             class="w-[31px] h-[31px] mt-[31px] cursor-pointer"
@@ -173,9 +193,8 @@
           </p>
         </div>
       </div>
-
       <!-- Funktionen -->
-      <div class="w-[445px] h-[157px] bg-white rounded-[20px] mt-12">
+      <div class="md:w-[445px] w-full h-[157px] bg-white rounded-[20px] mt-12">
         <h3
           class="text-xl not-italic font-bold leading-8 tracking-[-0.4px] px-[46px] py-[18px]"
         >
@@ -196,15 +215,14 @@
           </p>
         </div>
       </div>
-
       <!-- btn  -->
       <button
-        class="flex w-[445px] h-[54px] justify-center items-center gap-2.5 shrink-0 px-2 py-2.5 rounded-2xl bg-gradient-to-r from-[#EE294E] to-[#FF1BA5] mt-12 text-white text-center text-base font-semibold leading-[100%] tracking-[-0.32px]"
+        class="flex md:w-[445px] w-full h-[54px] justify-center items-center gap-2.5 shrink-0 px-2 py-2.5 rounded-2xl bg-gradient-to-r from-[#EE294E] to-[#FF1BA5] mt-12 text-white text-center text-base font-semibold leading-[100%] tracking-[-0.32px]"
       >
         Profil speichern
       </button>
 
-      <div class="w-[337px] bg-white rounded-xl mt-12">
+      <div class="md:w-[337px] w-full bg-white rounded-xl mt-12">
         <div class="pt-[53px] pl-[27px] flex flex-col gap-[12px]">
           <!-- 1 -->
           <div>
@@ -593,17 +611,19 @@
           </div>
         </div>
       </div>
+
+          
       <!-- chat section-->
-      <div class="w-[920px] h-[1030px] relative bg-white rounded-[20px]">
-        <div class="mt-16 p-10 flex flex-col gap-[46px]">
+      <div class="xl:w-[920px] w-[96%] h-[1030px] relative bg-white rounded-[20px]">
+        <div class="mt-16 xl:p-10 p-6 flex flex-col gap-[46px] ">
           <!--chat 1 -->
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 ">
             <div class="w-[34px] h-[34px] bg-pink-500 rounded-full">
-              <p class="text-white text-center font-['Modern Era'] py-1">W</p>
+              <p class="text-white text-center font-['Modern Era'] py-[5px] px-2 xl:py-1 xl:px-0">W</p>
             </div>
             <div class="flex flex-col items-end gap-[15px]">
               <div
-                class="w-[786px] h-[71px] bg-neutral-100 rounded-lg py-3 px-[25px]"
+                class="xl:w-[786px] w-full xl:h-[71px] h-auto bg-neutral-100 rounded-lg py-3 xl:px-[25px] px-[15px]"
               >
                 <p
                   class="text-blue-950 text-base font-medium font-['Modern Era'] leading-snug"
@@ -625,7 +645,7 @@
           <div class="flex items-center gap-4">
             <div class="flex flex-col items-end gap-[15px]">
               <div
-                class="w-[786px] h-[71px] bg-neutral-100 rounded-lg py-3 px-[25px]"
+                class="xl:w-[786px] w-full xl:h-[71px] h-auto bg-neutral-100 rounded-lg py-3 xl:px-[25px] px-[15px]"
               >
                 <p
                   class="text-blue-950 text-base font-medium font-['Modern Era'] leading-snug"
@@ -677,12 +697,12 @@
           </div>
         </div>
         <div>
-          <hr class="w-[920px] h-px bg-gray-100 mt-[483px]" />
+          <hr class="xl:w-[920px] w-full h-px bg-gray-100 md:mt-[520px] xl:mt-[483px] mt-[350px]" />
           <div
-            class="[883px] h-16 bg-neutral-100 rounded-lg mx-5 mt-4 flex items-center gap-4 rounded-lg overflow-hidden"
+            class="[883px] h-16 bg-neutral-100 rounded-lg mx-5 mt-4 flex items-center xl:gap-4 gap-2 pr-2 xl:pr-0 rounded-lg overflow-hidden"
           >
             <input
-              class="w-[700px] h-16 rounded-l-lg bg-neutral-100 text-neutral-400 text-sm font-normal font-['DM Sans'] leading-tight p-[22px]"
+              class="xl:w-[700px] w-full h-16 rounded-l-lg bg-neutral-100 text-neutral-400 text-sm font-normal font-['DM Sans'] leading-tight p-[22px]"
               type="text"
               name="text"
               id="text"
@@ -712,8 +732,8 @@
             </div>
           </div>
         </div>
-        <!-- Funktionen large table-->
-        <div class="w-[445px] h-[301px] bg-white rounded-[20px] mt-12">
+         <!-- Funktionen large table-->
+         <div class="md:w-[445px] w-full h-[301px] bg-white rounded-[20px] mt-24">
           <h3
             class="text-xl not-italic font-bold leading-8 tracking-[-0.4px] px-[24px] py-[18px]"
           >
@@ -816,15 +836,16 @@
           </div>
         </div>
 
-        <div class="w-[920px] h-[856px] bg-white rounded-2xl mt-12">
+        <div class="xl:w-[920px] w-full h-[856px] bg-white rounded-2xl mt-12">
           <h2
             class="text-black text-xl font-bold font-['DM Sans'] leading-loose px-[35px] pt-[29px]"
           >
             Adresse
           </h2>
-          <hr class="w-[920px] h-px bg-gray-100 mt-3" />
+          <hr class="xl:w-[920px] w-full h-px bg-gray-100 mt-3" />
         </div>
-        <div class="w-[343px] h-[289px] bg-white  px-[28px] m-4 rounded-2xl">
+                <!-- chart  -->
+        <div class="md:w-[343px] w-full h-[289px] bg-white  px-[28px] m-4 rounded-2xl">
           <div class="flex items-center justify-between">
           <div class=" text-black text-lg font-bold font-['DM Sans'] leading-7 pt-[22px]">Akquise</div>
           <div class="w-[63px] flex items-center justify-between ">
